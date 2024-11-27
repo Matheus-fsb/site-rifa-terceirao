@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/modal.css">
+    <link rel="icon" href="./public/images/favicon.png" type="image/x-icon">
+    <title>Rifa 913A</title>
+</head>
+
+<body>
+    <div id="central-box" class="central-box">
+        <div id="div-logo-top">
+            <img src="./public/images/913.svg" alt="913A">
+        </div>
+        <div id="div-title">
+            <h1>Rifa Solidária n°1</h1>
+            <p>Em prol da formatura do 3° ano do curso de Desenvolvimento de Sistemas da manhã (913A) do Instituto
+                Federal de Alagoas (IFAL)</p>
+        </div>
+        <div id="number-grid" class="dynamic-grid">
+            <!-- Grid de números -->
+        </div>
+        <img src="./public/images/pc.png" alt="pc" id="pc">
+    </div>
+
+    <!-- Modal -->
+    <div id="number-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="modal-text">Informações do número</h2>
+            <p class="lable-text"><em>Nome</em></p>
+            <p id="modal-name">Aqui o nome</p>
+            <p class="lable-text"><em>Tel</em></p>
+            <p id="modal-tel">Aqui o tel</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./public/scripts-geral/numbers.js"></script>
+    <script src="./public/scripts-geral/modal.js"></script>
+</body>
+
+</html>
