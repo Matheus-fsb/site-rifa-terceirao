@@ -1,4 +1,4 @@
-require('dotenv').config();
+import config from './config.js';
 
 const numberGridArray = document.getElementById('number-grid');
 const closeModal = document.getElementById('close-modal');
@@ -17,7 +17,7 @@ numberGridArray.addEventListener('click', async (event) => {
         modalText.textContent = `Número selecionado: ${event.target.textContent}`;
         
         try {
-            const response = await fetch(`${process.env.BASE_URL}/numbers/${numberId}`);
+            const response = await fetch(`${config.base_url}/numbers/${numberId}`);
             const data = await response.json();
 
             modal.classList.remove('hidden');

@@ -1,3 +1,5 @@
+import config from './config.js';
+
 require('dotenv').config();
 
 const grid = document.getElementById('number-grid');
@@ -5,7 +7,7 @@ const grid = document.getElementById('number-grid');
 // Função para carregar os números da API
 async function loadNumbers() {
     try {
-        const response = await fetch(`${process.env.BASE_URL}/numbers`); // A URL do seu backend
+        const response = await fetch(`${config.base_url}/numbers`); // A URL do seu backend
         const numbersList = await response.json();
 
         // Ordena os números pelo atributo 'number'
