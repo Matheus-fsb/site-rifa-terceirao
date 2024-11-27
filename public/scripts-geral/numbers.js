@@ -1,7 +1,5 @@
 import config from './config.js';
 
-require('dotenv').config();
-
 const grid = document.getElementById('number-grid');
 
 // Função para carregar os números da API
